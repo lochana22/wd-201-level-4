@@ -34,9 +34,9 @@ const todoList = () => {
     return list
       .map((todo) => {
         // eslint-disable-next-line camelcase
-        display_status = todo.completed ? "[x]" : "[ ]";
+        display_status = todo.completed ? "[x]" : "";
         // eslint-disable-next-line camelcase
-        display_date = todo.dueDate === today ? "" : todo.dueDate;
+        display_date = todo.dueDate === new Date().toLocaleDateString("en-CA") ? "" : todo.dueDate;
 
         // eslint-disable-next-line camelcase
         return `${display_status} ${todo.title} ${display_date}`;
