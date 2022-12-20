@@ -1,0 +1,39 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lochana22/wd-201-level-4.git"
+  },
+  "author": "Lochana Senapati <lochana.senapati5@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lochana22/wd-201-level-4/issues"
+  },
+  "homepage": "https://github.com/lochana22/wd-201-level-4#readme",
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "prettier --write ."
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "husky": "^8.0.2",
+    "jest": "true",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
