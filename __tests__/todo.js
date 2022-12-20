@@ -18,7 +18,7 @@ describe("TodoLIst Test Suite ", () => {
       completed: false,
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
-    expect(all.length).toBe(len + 1);
+    expect(all.length).toBe(len+1);
   });
 
   test("Should mark as complete", () => {
@@ -50,7 +50,7 @@ describe("TodoLIst Test Suite ", () => {
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
     dueTodayItems = dueToday();
-    expect(dueTodayItems.length).toBe(len + 1);
+    expect(dueTodayItems.length).toBe(len);
   });
 
   test("Should retrieve due Later items", () => {
@@ -64,6 +64,6 @@ describe("TodoLIst Test Suite ", () => {
       ).toLocaleDateString("en-CA"),
     });
     dueLaterItems = dueLater();
-    expect(dueLaterItems.length).toBe(len + 1);
+    expect(dueLaterItems.length).toBe(len+1);
   });
 });
