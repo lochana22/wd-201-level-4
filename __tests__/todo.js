@@ -50,7 +50,7 @@ describe("TodoLIst Test Suite ", () => {
       dueDate: new Date().toLocaleDateString("en-CA"),
     });
     dueTodayItems = dueToday();
-    expect(dueTodayItems.length).toBe(len);
+    expect(dueTodayItems.length).toBe(len + 1);
   });
 
   test("Should retrieve due Later items", () => {
